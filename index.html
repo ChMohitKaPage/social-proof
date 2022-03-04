@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Social proof section</title>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: url("images/bg-pattern-bottom-desktop.svg") no-repeat 27vw 20vh,url("images/bg-pattern-top-desktop.svg") no-repeat;
+        font-family: 'Spartan', sans-serif;
+      }
+      .container{
+        min-height: 85vh;
+        min-width: 85vw;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+      }
+      .block{
+        min-height: 40vh;
+        min-width: 80vw;
+    
+    display: flex;
+    justify-content: space-around;
+
+      }
+      .title{
+        width: 360px;
+        display: inline-block;
+        
+      }
+      .ratings{
+        width: 40%;
+        display: inline-block;
+      }
+      .rating{
+        font-weight: 700;
+    font-size: 0.8rem;
+    word-spacing: 2px;
+    min-height: 40px;
+    background-color: hsl(300, 24%, 96%);
+    
+    padding-top: 18px;
+    border-radius: 7px;
+    padding-left: 50px;
+    position: relative;
+    color:  hsl(300, 43%, 22%);
+      }
+      .tab{
+        width: 30px;
+        display: inline-block;
+      }
+      .cards{
+        height: 230px;
+    width: 320px;
+    background-color: rgb(81, 31, 80);
+    border-radius: 10px;
+    position: relative;
+      }
+      .cardTitle{
+        margin-top: 30px;
+        margin-left: 30px;
+      }
+      .profilepic{
+        height: 50px;
+        border-radius: 100%;
+        float: left;
+      }
+      .name{
+        display: inline-block;
+    margin-left: 20px;
+    width: 120px;
+    margin-top: 7px;
+    font-size: 13px;
+    color: white;
+    line-height: 1.5;
+      }
+      .cardBody{
+        color: hsl(300, 24%, 96%);
+    font-size: 12px;
+    margin-top: 25px;
+    margin: 25px;
+    
+    line-height: 1.6;
+      }
+      #cardsBlock{
+        width: 70vw;
+      }
+      #r2{
+        top: 10px;
+        left: 40px;
+      }
+      #r3{
+        top: 20px;
+        left: 80px;
+      }
+      #c2{
+        top: 20px;
+      }
+      #c3{
+        top: 40px;
+      }
+
+      @media screen and (max-width:400px) {
+        body{
+          background: url(images/bg-pattern-bottom-mobile.svg) no-repeat 0vw 76vh,url(images/bg-pattern-top-mobile.svg) no-repeat;
+        }
+        .title{
+          width: 295px;
+    display: inline-block;
+    text-align: center;
+        }
+        .container{
+          display: flex;
+          flex-direction: column;
+          margin: 60px 20px;
+        }
+        .block{
+          display: flex;
+          flex-direction: column;
+        }
+        .rating{
+          padding-left: 0;
+    position: static;
+    margin-top: 10px;
+    width: 320px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 2;
+        }
+        .rdesc{
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="block">
+          <div class="title">
+            <span style="font-size: 2.3rem;color:hsl(300, 43%, 22%); font-weight: 700; margin-bottom: 9px; display: block ;">10,000+ of our users love our products.</span> 
+            <div style="font-size: 0.72em; line-height: 18px; font-weight: 500; ">
+              We only provide great products combined with excellent customer service.
+    See what our satisfied customers are saying about our services.
+            </div>
+            
+          </div>
+          <div class="ratings">
+            <div class="rating" id="r1" > <div class="stars"><img src="images/icon-star.svg" alt=""> <img src="images/icon-star.svg" alt=""> <img src="images/icon-star.svg" alt=""> <img src="images/icon-star.svg" alt=""> <img src="images/icon-star.svg" alt=""></div><span class="rdesc">Rated 5 Stars in Reviews </span> </div>
+            <div class="rating" id="r2" > <div class="stars"><img src="images/icon-star.svg" alt=""> <img src="images/icon-star.svg" alt=""> <img src="images/icon-star.svg" alt=""> <img src="images/icon-star.svg" alt=""> <img src="images/icon-star.svg" alt=""></div></span><span class="rdesc">Rated 5 Stars in Report Guru</span> </div>
+            <div class="rating" id="r3" > <div class="stars"><img src="images/icon-star.svg" alt=""> <img src="images/icon-star.svg" alt=""> <img src="images/icon-star.svg" alt=""> <img src="images/icon-star.svg" alt=""> <img src="images/icon-star.svg" alt=""></div></span><span class="rdesc">Rated 5 Stars in BestTech</span> </div>
+      <br>
+     <br>
+          </div>
+        </div>
+        <div class="block"  id="cardsBlock">
+          <div class="cards" >
+            <div class="cardTitle"><img src="images/image-colton.jpg" alt="" class="profilepic">
+          <div class="name"> <span style="font-weight:700;">Colton Smith</span>  
+            Verified Buyer</div>
+          </div>
+            <div class="cardBody">
+              "We needed the same printed design as the one we had ordered a week prior.
+    Not only did they find the original order, but we also received it in time.
+    Excellent!"
+            </div>
+          
+        </div>
+          <div class="cards" id="c2" style="top: 20px;">
+            <div class="cardTitle"><img src="images/image-irene.jpg" alt="" class="profilepic">
+              <div class="name"> <span style="font-weight:700;">Irene Roberts</span>  
+                Verified Buyer</div>
+              </div>
+                <div class="cardBody">
+                  "Customer service is always excellent and very quick turn around. Completely
+                  delighted with the simplicity of the purchase and the speed of delivery."
+                </div>
+          </div>
+          <div class="cards" id="c3" style="top: 40px;">
+            <div class="cardTitle"><img src="images/image-anne.jpg" alt="" class="profilepic">
+              <div class="name"> <span style="font-weight:700;">Anne Wallace</span>  
+                Verified Buyer</div>
+              </div>
+                <div class="cardBody">
+                  "We needed the same printed design as the one we had ordered a week prior.
+        Not only did they find the original order, but we also received it in time.
+        Excellent!"
+                </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+  </body>
+</html>
